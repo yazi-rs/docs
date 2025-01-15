@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[947],{6600:a=>{a.exports=JSON.parse('{"authors":[{"name":"\u4e09\u54b2\u96c5 \xb7 Misaki Masa","title":"Creator of Yazi","url":"https://github.com/sxyazi","imageURL":"https://github.com/sxyazi.png","key":"sxyazi","page":null,"count":1}]}')}}]);
