@@ -84,6 +84,7 @@ File actions:
 - [what-size.yazi](https://github.com/pirafrank/what-size.yazi) - Calculate total size of current selection or of current working directory.
 - [lazygit.yazi](https://github.com/Lil-Dank/lazygit.yazi) - Manage Git directories with [lazygit](https://github.com/jesseduffield/lazygit) with a quick shortcut.
 - [sudo.yazi](https://github.com/TD-Sky/sudo.yazi) - Execute specific file operations with `sudo` privileges.
+- [replace.yazi](https://github.com/shuizhongyueming/replace.yazi) - Replace the currently hovered file/folder with previously yanked items.
 - [restore.yazi](https://github.com/boydaihungst/restore.yazi) - Restore/recover latest deleted files/folders using `trash-cli`.
 - [simple-mtpfs.yazi](https://github.com/boydaihungst/simple-mtpfs.yazi) - Mounting MTP devices (Android, Camera, etc) using `simple-mtpfs` (for Linux only).
 
