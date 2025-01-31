@@ -11,16 +11,16 @@ It is an essential component of Yazi. Most distributions include it by default w
 
 ## Package Manager
 
-You can manage your plugins and flavors using the `ya pack` subcommand. For example, to install the plugin from https://github.com/owner/my-plugin.yazi, run:
+You can manage your plugins and flavors using the `ya pack` subcommand. For example, to install plugins from GitHub repositories, run:
 
 ```sh
-ya pack -a owner/my-plugin
+ya pack -a owner/my-plugin owner2/another-plugin
 ```
 
-`ya pack` also supports installing a subdirectory from a monorepo as a package. For example, to install the package from https://github.com/yazi-rs/plugins/tree/main/git.yazi, run:
+`ya pack` also supports installing subdirectories from  monorepos as a package. For example, to install multiple packages from https://github.com/yazi-rs/plugins/tree/main/, run:
 
 ```sh
-ya pack -a yazi-rs/plugins:git
+ya pack -a yazi-rs/plugins:git yazi-rs/plugins:preview
 ```
 
 and it will automatically clone them from GitHub, copy them to your plugins directory, and update the `package.toml` to lock their versions:
@@ -30,10 +30,16 @@ and it will automatically clone them from GitHub, copy them to your plugins dire
 [plugin]
 deps = [
 	{ use = "owner/my-plugin", rev = "0573024" },
-	{ use = "yazi-rs/plugins:git", rev = "9a1129c" }
+	{ use = "owner2/another-plugin", rev = "8b2f391" },
+	{ use = "yazi-rs/plugins:git", rev = "9a1129c" },
+	{ use = "yazi-rs/plugins:preview", rev = "7d4e012" }
 ]
 ```
+To remove multiple plugins at once:
 
+```sh
+ya pack -d owner/my-plugin yazi-rs/plugins:git
+```
 To list all the plugins managed by `ya pack`:
 
 ```sh
