@@ -3,6 +3,8 @@ sidebar_position: 3
 description: Learn how to configure your Yazi theme.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # theme.toml
 
 :::tip
@@ -119,9 +121,10 @@ Unset mode
 
 ## [status] {#status}
 
-- separator_open (String): Opening separator symbol. e.g. `"["`.
-- separator_close (String): Closing separator symbol. e.g. `"]"`.
-- separator_style (Style): Separator style.
+- sep_left (\{ open: String, close: String }): Left separator symbol. e.g. `{ open = "", close = "]" }`.
+- sep_right (\{ open: String, close: String }): Right separator symbol. e.g. `{ open = "[", close = "" }`.
+
+<img src={useBaseUrl("/img/status-sep-explain.png")} />
 
 Progress
 
