@@ -553,6 +553,44 @@ run = '''shell --
 '''
 ```
 
+## Preview directory with Rofi
+
+**This tip currently requires Yazi nightly version.**
+
+This script lets you preview the current directory's thumbnails using Rofi. Selecting an item reveals it in Yazi.
+
+Save the script in your preferred location, for example, ~/.config/rofi/rofi-gridview.sh.
+
+```bash
+#!/bin/bash
+
+rofi \
+	-theme fullscreen-preview \
+	-show filebrowser \
+	-filebrowser-command "ya emit reveal" \
+	-filebrowser-directory "$(pwd)"
+```
+
+Make it executable:
+
+```
+chmod +x ~/.config/rofi/rofi-gridview.sh
+```
+
+Then add the script as a keybinding.
+
+```toml
+# ~/.config/yazi/keymap.toml
+[[manager.prepend_keymap]]
+on  = "<C-s>"
+run = '''
+  shell --confirm '~/.config/rofi/rofi-gridview.sh'
+'''
+'''
+```
+
+Rofi themes: https://davatorium.github.io/rofi/themes/themes
+
 ## Make Yazi even faster than fast {#make-yazi-even-faster}
 
 While Yazi is already fast, there is still plenty of room for optimization for specific users or under certain conditions:
