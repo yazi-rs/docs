@@ -248,7 +248,7 @@ pkgin install yazi ffmpeg7 p7zip jq poppler fd ripgrep fzf zoxide ImageMagick
 Yazi relies on `file(1)` to detect the mime-type of the file, and the easiest and most reliable way to get it on Windows is to install Git for Windows and use the `file.exe` that comes with it.
 
 1. Install Git for Windows by running [the official installer](https://git-scm.com/download/win), or through your package manager of choice.
-2. To allow Yazi to use `file(1)`, add `<Git_Installed_Directory>\usr\bin\file.exe` to your `YAZI_FILE_ONE` environment variable, which differs depending on how you installed Git:
+2. To allow Yazi to use `file(1)`, add `<Git_Installed_Directory>\usr\bin\file.exe` to your `YAZI_FILE_ONE` environment variable(do not double quote the path), which differs depending on how you installed Git:
    - If you installed Git with the installer, it would be `C:\Program Files\Git\usr\bin\file.exe`.
    - If you installed Git with Scoop, it would be `C:\Users\<Username>\scoop\apps\git\current\usr\bin\file.exe`.
 3. Restart your terminal.
