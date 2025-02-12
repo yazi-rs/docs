@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Why is Yazi fast?","permalink":"/blog/why-is-yazi-fast","unlisted":false,"date":"2023-10-29T00:00:00.000Z"}]}')}}]);

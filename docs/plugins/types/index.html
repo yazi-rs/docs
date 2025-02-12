@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-plugins/types" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Types | Yazi</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://yazi-rs.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://yazi-rs.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://yazi-rs.github.io/docs/plugins/types"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Types | Yazi"><meta data-rh="true" name="description" content="Learn how to use Yazi&#x27;s Lua API."><meta data-rh="true" property="og:description" content="Learn how to use Yazi&#x27;s Lua API."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://yazi-rs.github.io/docs/plugins/types"><link data-rh="true" rel="alternate" href="https://yazi-rs.github.io/docs/plugins/types" hreflang="en"><link data-rh="true" rel="alternate" href="https://yazi-rs.github.io/docs/plugins/types" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://MS4XF9Z1OE-dsn.algolia.net" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Yazi RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Yazi Atom Feed">
+
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="Yazi" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.c01fc1b9.css">
+<script src="/assets/js/runtime~main.d60cf4ba.js" defer="defer"></script>
+<script src="/assets/js/main.b292bb28.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_Gw9X" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_nmNj" role="banner"><div class="announcementBarPlaceholder_oqbX"></div><div class="content_q1Y0 announcementBarContent_tWIO">🙏 Please help us improve docs: If you find any errors, don't hesitate to click the "Edit this page" link at bottom.
+If you want to contribute, please check out <a target="_blank" href="https://github.com/yazi-rs/yazi-rs.github.io/issues/70">the Tracker issue</a>.</div><button type="button" aria-label="Close" class="clean-btn close closeButton_de6V announcementBarClose_FGQ3"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Yazi file manager" class="themedComponent_EtF8 themedComponent--light_L8_x"><img src="/img/logo.png" alt="Yazi file manager" class="themedComponent_EtF8 themedComponent--dark_R27a"></div><b class="navbar__title text--truncate">Yazi</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/installation">Docs</a><a class="navbar__item navbar__link" href="/features">Features</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/sxyazi/yazi" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_XvMx"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_aKAc colorModeToggle_yA5z"><button class="clean-btn toggleButton_t1YT toggleButtonDisabled_VGMr" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_owZl"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_pcis"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_H2zJ"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Command+K)"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_v3Qs"><div class="docsWrapper_TeEO"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_LuHA" type="button"></button><div class="docRoot_A4Wh"><aside class="theme-doc-sidebar-container docSidebarContainer_bRfG"><div class="sidebarViewport_y9AJ"><div class="sidebar_JTSu"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_iVQk menuWithAnnouncementBar_GBk6"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/installation">Installation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/quick-start">Quick Start</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/configuration/overview">Configuration</a><button aria-label="Expand sidebar category &#x27;Configuration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/image-preview">Image Preview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/plugins/overview">Plugins (BETA)</a><button aria-label="Collapse sidebar category &#x27;Plugins (BETA)&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/plugins/types">Types</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/plugins/layout">Layout</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/plugins/utils">Utils</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/plugins/config">Config</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/flavors/overview">Flavors (BETA)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/cli">CLI</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/dds">DDS</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tips">Tips</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/resources">Resources</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/faq">Frequently Asked Questions</a></li></ul></nav></div></div></aside><main class="docMainContainer_eF5b"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_LvMu"><div class="docItemContainer_RXu8"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_IvwK" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_Euyt"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/plugins/overview"><span itemprop="name">Plugins (BETA)</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Types</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_qkzl theme-doc-toc-mobile tocMobile_LvSP"><button type="button" class="clean-btn tocCollapsibleButton_cQpv">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Types</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_zXIh" id="shared">Shared<a href="#shared" class="hash-link" aria-label="Direct link to Shared" title="Direct link to Shared">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="shared.url">Url<a href="#shared.url" class="hash-link" aria-label="Direct link to Url" title="Direct link to Url">​</a></h3>
+<p>Create a Url:</p>
+<div class="language-lua codeBlockContainer_nank theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_okeh"><pre tabindex="0" class="prism-code language-lua codeBlock_DGNl thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_BAKj"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">-- regular file</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">local</span><span class="token plain"> url </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">Url</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;/root/Downloads/logo.png&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">-- `bgm.mp3` from the archive `ost.zip`</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">local</span><span class="token plain"> url </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">Url</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;archive:///root/ost.zip#bgm.mp3&quot;</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre><div class="buttonGroup_zdxN"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_Is0M" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_SsVa"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_Zh4u"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Properties:</p>
+<ul>
+<li><code>frag</code> - The fragment string of the url. Let&#x27;s say the url <code>archive:///root/my-archive.zip#1.jpg</code>, the fragment <code>1.jpg</code></li>
+<li><code>is_regular</code> - Whether the file represented by the url is a regular file</li>
+<li><code>is_search</code> - Whether the file represented by the url from the search result</li>
+<li><code>is_archive</code> - Whether the file represented by the url from an archive</li>
+<li><code>is_absolute</code> - Whether the path represented by the url is absolute</li>
+<li><code>has_root</code> - Whether the path represented by the url has a root</li>
+</ul>
+<p>Methods:</p>
+<ul>
+<li><code>name()</code> - Returns the filename in string if any, otherwise <code>nil</code></li>
+<li><code>stem()</code> - Returns the filename without the extension in string if any, otherwise <code>nil</code></li>
+<li><code>join(url)</code> - Joins with another <code>Url</code> or a string of url, returns a new <code>Url</code></li>
+<li><code>parent()</code> - Returns parent directory <code>Url</code> if any, otherwise <code>nil</code></li>
+<li><code>starts_with(url)</code> - Whether the url starts with another <code>Url</code> or a string of url</li>
+<li><code>ends_with(url)</code> - Whether the url ends with another <code>Url</code> or a string of url</li>
+<li><code>strip_prefix(url)</code> - Strips the prefix of another <code>Url</code> or a string of url, returns a new <code>Url</code></li>
+</ul>
+<p>Meta methods:</p>
+<ul>
+<li><code>__eq(another_url)</code></li>
+<li><code>__tostring()</code></li>
+<li><code>__concat(string)</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="shared.cha">Cha<a href="#shared.cha" class="hash-link" aria-label="Direct link to Cha" title="Direct link to Cha">​</a></h3>
+<p>Cha means one file&#x27;s characteristics with the following properties:</p>
+<ul>
+<li><code>is_dir</code> - Whether this file is a directory</li>
+<li><code>is_hidden</code> - Whether this file is hidden (starts with a dot)</li>
+<li><code>is_link</code> - Whether this file is a symlink</li>
+<li><code>is_orphan</code> - Whether this file is a bad symlink, which points to a non-existent file</li>
+<li><code>is_dummy</code> - Whether the file is dummy, which fails to load complete metadata, possibly the filesystem doesn&#x27;t support it, such as FUSE.</li>
+<li><code>is_block</code> - Whether this file is a block device</li>
+<li><code>is_char</code> - Whether this file is a character device</li>
+<li><code>is_fifo</code> - Whether this file is a fifo</li>
+<li><code>is_sock</code> - Whether this file is a socket</li>
+<li><code>is_exec</code> - Whether this file is executable</li>
+<li><code>is_sticky</code> - Whether this file has the sticky bit set</li>
+<li><code>len</code> - The length of this file, returns an integer representing the size in bytes. Note that it can&#x27;t reflect the size of a directory, use <a href="#app-data.fs-file"><code>size()</code></a> instead</li>
+<li><code>atime</code> - The accessed time of this file in Unix timestamp, or <code>nil</code> if it doesn&#x27;t have a valid time</li>
+<li><code>btime</code> - The birth time of this file in Unix timestamp, or <code>nil</code> if it doesn&#x27;t have a valid time</li>
+<li><code>mtime</code> - The modified time of this file in Unix timestamp, or <code>nil</code> if it doesn&#x27;t have a valid time</li>
+</ul>
+<p>And methods:</p>
+<ul>
+<li><code>perm()</code> - Unix permissions of this file in string, e.g. <code>drwxr-xr-x</code>. For Windows, it&#x27;s always <code>nil</code></li>
+</ul>
+<p>And the Unix only properties:</p>
+<ul>
+<li><code>uid</code> - The user id of this file</li>
+<li><code>gid</code> - The group id of this file</li>
+<li><code>nlink</code> - The number of hard links to this file</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="shared.file">File<a href="#shared.file" class="hash-link" aria-label="Direct link to File" title="Direct link to File">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>url</code> - The <a href="#shared.url">Url</a> of this file</li>
+<li><code>cha</code> - The <a href="#shared.cha">Cha</a> of this file</li>
+<li><code>link_to</code> - The <a href="#shared.url">Url</a> of this file pointing to, if it&#x27;s a symlink; otherwise, <code>nil</code></li>
+<li><code>name</code> - The name of this file</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="shared.icon">Icon<a href="#shared.icon" class="hash-link" aria-label="Direct link to Icon" title="Direct link to Icon">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>text</code> - The text of this icon</li>
+<li><code>style</code> - The <a href="/docs/plugins/layout#style">Style</a> of this icon</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="shared.error">Error<a href="#shared.error" class="hash-link" aria-label="Direct link to Error" title="Direct link to Error">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>code</code>: The raw error code if any, otherwise <code>nil</code>, which is an integer.</li>
+</ul>
+<p>Meta methods:</p>
+<ul>
+<li><code>__tostring()</code></li>
+<li><code>__concat(string)</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="shared.range">Range<a href="#shared.range" class="hash-link" aria-label="Direct link to Range" title="Direct link to Range">​</a></h3>
+<p>TODO</p>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="shared.window">Window<a href="#shared.window" class="hash-link" aria-label="Direct link to Window" title="Direct link to Window">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>rows</code> - The number of rows of this window</li>
+<li><code>cols</code> - The number of columns of this window</li>
+<li><code>width</code> - The width of this window in pixels</li>
+<li><code>height</code> - The height of this window in pixels</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_zXIh" id="app-data">App data<a href="#app-data" class="hash-link" aria-label="Direct link to App data" title="Direct link to App data">​</a></h2>
+<p>You can access all app data through the <code>cx</code> within <a href="/docs/plugins/overview#sync-context">Sync context</a>:</p>
+<ul>
+<li><code>cx.active</code> - The active tab, which is a <a href="#app-data.tab-tab">tab::Tab</a></li>
+<li><code>cx.tabs</code> - All of tabs, which is a <a href="#app-data.manager-tabs">manager::Tabs</a></li>
+<li><code>cx.tasks</code> - All of tasks, which is a <a href="#app-data.tasks-tasks">tasks::Tasks</a></li>
+<li><code>cx.yanked</code> - The yanked urls, which is a <a href="#app-data.manager-yanked">manager::Yanked</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.tab-mode"><code>tab::Mode</code><a href="#app-data.tab-mode" class="hash-link" aria-label="Direct link to app-data.tab-mode" title="Direct link to app-data.tab-mode">​</a></h3>
+<p>Visual mode status.</p>
+<p>Properties:</p>
+<ul>
+<li><code>is_select</code> - Whether the mode is select</li>
+<li><code>is_unset</code> - Whether the mode is unset</li>
+<li><code>is_visual</code> - Whether the mode is select or unset</li>
+</ul>
+<p>Meta methods:</p>
+<ul>
+<li><code>__tostring()</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.tab-preference"><code>tab::Preference</code><a href="#app-data.tab-preference" class="hash-link" aria-label="Direct link to app-data.tab-preference" title="Direct link to app-data.tab-preference">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>sort_by</code></li>
+<li><code>sort_sensitive</code></li>
+<li><code>sort_reverse</code></li>
+<li><code>sort_dir_first</code></li>
+<li><code>sort_translit</code></li>
+<li><code>linemode</code></li>
+<li><code>show_hidden</code></li>
+</ul>
+<p>These properties are consistent with those in <a href="/docs/configuration/yazi">yazi.toml</a>, and will not be detailed here.</p>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.tab-selected"><code>tab::Selected</code><a href="#app-data.tab-selected" class="hash-link" aria-label="Direct link to app-data.tab-selected" title="Direct link to app-data.tab-selected">​</a></h3>
+<p>Meta methods:</p>
+<ul>
+<li><code>__len()</code></li>
+<li><code>__pairs()</code> - Iterate over the selected <a href="#shared.url">Url</a>s.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.tab-preview"><code>tab::Preview</code><a href="#app-data.tab-preview" class="hash-link" aria-label="Direct link to app-data.tab-preview" title="Direct link to app-data.tab-preview">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>skip</code> - The number of units to skip. The units largely depend on your previewer, such as lines for code and percentages for videos.</li>
+<li><code>folder</code> - The <a href="#app-data.tab-folder">tab::Folder</a> being previewed, or <code>nil</code> if this preview is not for folders</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.tab-folder"><code>tab::Folder</code><a href="#app-data.tab-folder" class="hash-link" aria-label="Direct link to app-data.tab-folder" title="Direct link to app-data.tab-folder">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>cwd</code> - The current working directory of this folder, which is a <a href="#shared.url">Url</a></li>
+<li><code>offset</code> - The offset of this folder, which is an integer</li>
+<li><code>cursor</code> - The cursor position of this folder, which is an integer</li>
+<li><code>window</code> - A table of <a href="#shared.file">File</a> in the visible area of this folder</li>
+<li><code>files</code> - The <a href="#app-data.fs-files"><code>fs::Files</code></a> of this folder</li>
+<li><code>hovered</code> - The hovered <a href="#shared.file">File</a> of this folder, or <code>nil</code> if there is no hovered file</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.fs-files"><code>fs::Files</code><a href="#app-data.fs-files" class="hash-link" aria-label="Direct link to app-data.fs-files" title="Direct link to app-data.fs-files">​</a></h3>
+<p>Meta methods:</p>
+<ul>
+<li><code>__len()</code></li>
+<li><code>__index(idx)</code> - Access the <a href="#app-data.fs-file">fs::File</a> by index</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.fs-file"><code>fs::File</code><a href="#app-data.fs-file" class="hash-link" aria-label="Direct link to app-data.fs-file" title="Direct link to app-data.fs-file">​</a></h3>
+<p>Based on <a href="#shared.file">File</a>, with the following additional methods:</p>
+<ul>
+<li><code>size()</code> - The size of this file, returns an integer representing the size in bytes, or <code>nil</code> if its a directory and it has not been evaluated</li>
+<li><code>mime()</code> - The mime-type of this file, which is a string, or <code>nil</code> if it&#x27;s a directory or hasn&#x27;t been lazily calculated at all</li>
+<li><code>prefix()</code> - The prefix of this file relative to <code>CWD</code>, which used in the flat view during search. For instance, if <code>CWD</code> is <code>/foo</code>, and the file is <code>/foo/bar/baz</code>, then the prefix is <code>bar/</code></li>
+<li><code>icon()</code> - The <a href="#shared.icon">Icon</a> of this file, <a href="/docs/configuration/theme#icon"><code>[icon]</code></a> rules are applied; if no rule matches, returns <code>nil</code></li>
+<li><code>style()</code> - The <a href="/docs/plugins/layout#style">Style</a> of this file, <a href="/docs/configuration/theme#filetype"><code>[filetype]</code></a> rules are applied; if no rule matches, returns <code>nil</code></li>
+<li><code>is_hovered()</code> - Whether this file is hovered</li>
+<li><code>is_yanked()</code> - Whether this file is yanked</li>
+<li><code>is_selected()</code> - Whether this file is selected</li>
+<li><code>found()</code> - When users find a file using the <code>find</code> command, the status of the file - returns <code>nil</code> if it doesn&#x27;t match the user&#x27;s find keyword; otherwise, returns <code>{idx, all}</code>, where <code>idx</code> is the position of matched file, and <code>all</code> represents the number of all matched files.</li>
+<li><code>highlights()</code> - TODO</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.manager-tabs"><code>manager::Tabs</code><a href="#app-data.manager-tabs" class="hash-link" aria-label="Direct link to app-data.manager-tabs" title="Direct link to app-data.manager-tabs">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>idx</code> - The index of the active tab</li>
+</ul>
+<p>Meta methods:</p>
+<ul>
+<li><code>__len()</code></li>
+<li><code>__index(idx)</code> - Access the <a href="#app-data.tab-tab">tab::Tab</a> by index</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.tab-tab"><code>tab::Tab</code><a href="#app-data.tab-tab" class="hash-link" aria-label="Direct link to app-data.tab-tab" title="Direct link to app-data.tab-tab">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li><code>mode</code> - The <a href="#app-data.tab-mode">tab::Mode</a> of this tab.</li>
+<li><code>pref</code> - The <a href="#app-data.tab-preference">tab::Preference</a> of this tab.</li>
+<li><code>current</code> - The current folder within this tab, which is a <a href="#app-data.tab-folder">tab::Folder</a>.</li>
+<li><code>parent</code> - The parent folder within this tab, which is a <a href="#app-data.tab-folder">tab::Folder</a> if <code>current</code> has a parent; otherwise, <code>nil</code>.</li>
+<li><code>selected</code> - The selected files within this tab, which is a <a href="#app-data.tab-selected">tab::Selected</a>.</li>
+<li><code>preview</code> - The <a href="#app-data.tab-preview">tab::Preview</a> within this tab.</li>
+</ul>
+<p>Methods:</p>
+<ul>
+<li><code>name()</code> - The name of this tab</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.tasks-tasks"><code>tasks::Tasks</code><a href="#app-data.tasks-tasks" class="hash-link" aria-label="Direct link to app-data.tasks-tasks" title="Direct link to app-data.tasks-tasks">​</a></h3>
+<p>Properties:</p>
+<ul>
+<li>
+<p><code>progress</code> - The progress of all tasks, which is a table:</p>
+<div class="language-lua codeBlockContainer_nank theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_okeh"><pre tabindex="0" class="prism-code language-lua codeBlock_DGNl thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_BAKj"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	</span><span class="token comment" style="color:#999988;font-style:italic">-- Number of tasks</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	total </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	succ  </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	fail  </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	</span><span class="token comment" style="color:#999988;font-style:italic">-- Workload of tasks</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	found     </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	processed </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup_zdxN"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_Is0M" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_SsVa"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_Zh4u"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_zXIh" id="app-data.manager-yanked"><code>manager::Yanked</code><a href="#app-data.manager-yanked" class="hash-link" aria-label="Direct link to app-data.manager-yanked" title="Direct link to app-data.manager-yanked">​</a></h3>
+<div class="language-lua codeBlockContainer_nank theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_okeh"><pre tabindex="0" class="prism-code language-lua codeBlock_DGNl thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_BAKj"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> idx</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> url </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">pairs</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">cx</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">yanked</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">do</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">	</span><span class="token comment" style="color:#999988;font-style:italic">-- ...</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">end</span><br></span></code></pre><div class="buttonGroup_zdxN"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_Is0M" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_SsVa"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_Zh4u"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Meta methods:</p>
+<ul>
+<li><code>__len()</code></li>
+<li><code>__pairs()</code> - Iterate over the yanked <a href="#shared.url">Url</a>s.</li>
+</ul>
+<p>Properties:</p>
+<ul>
+<li><code>is_cut</code> - Whether the yanked urls are cut.</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/yazi-rs/yazi-rs.github.io/edit/main/docs/plugins/types.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_JkCz" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_p5E5"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/plugins/overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Plugins (BETA)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/plugins/layout"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Layout</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_NVbz thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#shared" class="table-of-contents__link toc-highlight">Shared</a><ul><li><a href="#shared.url" class="table-of-contents__link toc-highlight">Url</a></li><li><a href="#shared.cha" class="table-of-contents__link toc-highlight">Cha</a></li><li><a href="#shared.file" class="table-of-contents__link toc-highlight">File</a></li><li><a href="#shared.icon" class="table-of-contents__link toc-highlight">Icon</a></li><li><a href="#shared.error" class="table-of-contents__link toc-highlight">Error</a></li><li><a href="#shared.range" class="table-of-contents__link toc-highlight">Range</a></li><li><a href="#shared.window" class="table-of-contents__link toc-highlight">Window</a></li></ul></li><li><a href="#app-data" class="table-of-contents__link toc-highlight">App data</a><ul><li><a href="#app-data.tab-mode" class="table-of-contents__link toc-highlight"><code>tab::Mode</code></a></li><li><a href="#app-data.tab-preference" class="table-of-contents__link toc-highlight"><code>tab::Preference</code></a></li><li><a href="#app-data.tab-selected" class="table-of-contents__link toc-highlight"><code>tab::Selected</code></a></li><li><a href="#app-data.tab-preview" class="table-of-contents__link toc-highlight"><code>tab::Preview</code></a></li><li><a href="#app-data.tab-folder" class="table-of-contents__link toc-highlight"><code>tab::Folder</code></a></li><li><a href="#app-data.fs-files" class="table-of-contents__link toc-highlight"><code>fs::Files</code></a></li><li><a href="#app-data.fs-file" class="table-of-contents__link toc-highlight"><code>fs::File</code></a></li><li><a href="#app-data.manager-tabs" class="table-of-contents__link toc-highlight"><code>manager::Tabs</code></a></li><li><a href="#app-data.tab-tab" class="table-of-contents__link toc-highlight"><code>tab::Tab</code></a></li><li><a href="#app-data.tasks-tasks" class="table-of-contents__link toc-highlight"><code>tasks::Tasks</code></a></li><li><a href="#app-data.manager-yanked" class="table-of-contents__link toc-highlight"><code>manager::Yanked</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/installation">Docs</a></li><li class="footer__item"><a class="footer__link-item" href="/features">Features</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/qfADduSdJu" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord (English mainly)<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_XvMx"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://t.me/yazi_rs" target="_blank" rel="noopener noreferrer" class="footer__link-item">Telegram (Chinese mainly)<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_XvMx"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/sxyazi/yazi" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_XvMx"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Yazi. Built with ❤️️.</div></div></div></footer></div>
+</body>
+</html>
